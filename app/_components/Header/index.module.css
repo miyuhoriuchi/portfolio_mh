@@ -1,0 +1,28 @@
+.header {
+  padding-top: 24px;
+  text-align: center;
+}
+
+.portfolioText {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  color: #403f53;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: #403f53;
+  margin-bottom: 24px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: #403f53;
+  margin-bottom: 64px;
+}

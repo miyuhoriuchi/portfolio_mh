@@ -1,0 +1,38 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image {
+  background-color: #f8f8fa;
+  aspect-ratio: 4 / 3;
+}
+
+.content {
+  padding: 32px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.category {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 14px;
+  color: #403f53;
+}
+
+@media (min-width: 768px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}

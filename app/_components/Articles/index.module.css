@@ -1,0 +1,10 @@
+.articlesGrid {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .articlesGrid {
+    grid-template-columns: 1fr;
+  }
+}
