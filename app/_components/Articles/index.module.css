@@ -1,6 +1,23 @@
+.articleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .articlesGrid {
   display: grid;
-  gap: 24px;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+.moreLink {
+  color: var(--color-text-dark);
+  border-bottom: 1px dashed var(--color-text-dark);
+}
+
+.moreLink:hover {
+  color: var(--color-text-gray);
+  border-bottom: 1px dashed var(--color-text-gray);
 }
 
 @media (min-width: 768px) {

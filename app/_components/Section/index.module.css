@@ -3,15 +3,16 @@
 }
 
 .sectionTitle {
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  color: #403f53;
+  font-size: var(--fontsize-en-h2);
+  letter-spacing: var(--letterspacing-en);
+  color: var(--color-text-black);
   margin-bottom: 32px;
+  font-weight: 300;
 }
 
 .sectionSubtitle {
-  font-size: 14px;
-  margin-left: 4px;
+  font-size: var(--fontsize-jp-sub);
+  color: var(--color-text-dark);
 }
 
 .contactSection {

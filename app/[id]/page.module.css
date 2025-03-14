@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 100vw;
+  height: 465px;
+  background-color: var(--color-background-gray);
+  margin-bottom: 48px;
+}
+
+.contents {
+  max-width: 800px;
+}
+
+.overview {
+  border-bottom: 1px solid var(--color-border-normal);
+}
+
+.title {
+  font-size: var(--fontsize-jp-h2);
+  line-height: var(--lineheigt-multi);
+  margin-bottom: 32px;
+}
+
+.overviewText {
+  line-height: var(--lineheigt-multi);
+  margin-bottom: 32px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.infoItem {
+  display: flex;
+}
+
+.itemName {
+  width: 100px;
+  font-weight: 600;
+}
+
+.htmlContent {
+  padding: 32px 0;
+}

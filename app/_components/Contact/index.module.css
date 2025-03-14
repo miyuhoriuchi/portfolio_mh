@@ -1,22 +1,43 @@
-.email {
-  font-size: 14px;
-  color: #666666;
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: var(--fontsize-en-h3);
+  letter-spacing: var(--letterspacing-en);
+  color: var(--color-text-black);
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.sectionSubtitle {
+  font-size: var(--fontsize-jp-ex);
+  color: var(--color-text-dark);
+  margin-left: 8px;
+}
+
+.emailContainer {
+  display: flex;
+  gap: 4px;
   margin-bottom: 32px;
+}
+
+.email {
+  font-size: var(--fontsize-jp-sub);
+  color: var(--color-text-dark);
+  letter-spacing: 0em;
+  text-decoration: underline dotted;
 }
 
 .socialLinks {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 32px;
 }
 
 .socialLink {
   color: #403f53;
   text-decoration: none;
-}
-
-.copyright {
-  font-size: 12px;
-  color: #666666;
-  margin-top: 64px;
 }

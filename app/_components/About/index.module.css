@@ -1,29 +1,17 @@
-.aboutCard {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 32px;
-}
-
 .aboutContent {
   display: flex;
-  gap: 32px;
-}
-
-.profileImage {
-  width: 128px;
-  height: 128px;
-  background-color: #f8f8fa;
-  border-radius: 50%;
-  flex-shrink: 0;
+  gap: 20px;
+  align-items: center;
 }
 
 .profileName {
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 16px;
 }
 
 .profileDescription {
-  font-size: 14px;
-  color: #403f53;
+  font-size: var(--fontsize-jp-sub);
+  color: var(--color-text-black);
+  line-height: var(--lineheigt-multi);
   margin-bottom: 16px;
 }

@@ -1,38 +1,73 @@
 .card {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #ffffff;
-  border-radius: 8px;
+  background-color: var(--color-background-gray);
+  border-radius: 16px;
   overflow: hidden;
+  height: 320px;
+  position: relative;
 }
 
 .image {
-  background-color: #f8f8fa;
-  aspect-ratio: 4 / 3;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.image:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.5s all;
 }
 
 .content {
-  padding: 32px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 0.9);
+  margin: 16px;
+  border-radius: 12px;
+  position: absolute;
+  height: calc(100% - 32px);
+  width: 40%;
+  left: 0px;
 }
 
 .title {
-  font-size: 18px;
+  font-size: var(--fontsize-jp-h4);
+  letter-spacing: var(--letterspacing-ja);
+  font-weight: 700;
   margin-bottom: 8px;
 }
 
 .category {
-  font-size: 14px;
-  color: #666666;
-  margin-bottom: 16px;
+  font-size: var(--fontsize-ja-sub);
+  color: var(--color-text-dark);
+}
+
+.titleContainer {
+  margin-bottom: 32px;
 }
 
 .description {
-  font-size: 14px;
-  color: #403f53;
+  font-size: var(--fontsize-ja-sub);
+  color: var(--color-text-black);
+  line-height: var(--lineheigt-multi);
 }
 
-@media (min-width: 768px) {
-  .card {
-    grid-template-columns: 1fr 1fr;
-  }
+.smallcard {
+  height: 200px;
+}
+
+.smallTitle {
+  font-size: var(--fontsize-jp-normal);
+  margin-bottom: 4px;
+}
+
+.smallCategory {
+  font-size: var(--fontsize-ja-sub);
+}
+
+.smallTitleContainer {
+  margin-bottom: 0;
 }

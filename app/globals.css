@@ -1,3 +1,40 @@
+:root {
+  /* フォントサイズ */
+  --fontsize-en-h1: 2.5rem;
+  --fontsize-en-h2: 1.75rem;
+  --fontsize-en-h3: 1rem;
+
+  --fontsize-jp-h1: 3.5rem;
+  --fontsize-jp-h2: 2.5rem;
+  --fontsize-jp-h3: 1.75rem;
+  --fontsize-jp-h4: 1.25rem;
+
+  --fontsize-jp-normal: 1rem;
+  --fontsize-jp-sub: 0.875rem;
+  --fontsize-jp-ex: 0.75rem;
+  --fontsize-jp-tiny: 0.625rem;
+
+  /* 字間 */
+  --letterspacing-en: 0.0625rem;
+  --letterspacing-ja: 0.0625rem;
+
+  /* 行の高さ */
+  --lineheigt-single: 1.4rem;
+  --lineheigt-multi: 1.6rem;
+
+  /* 色 */
+  --color-main-normal: #958eb8;
+  --color-main-light: #d9d3ed;
+  --color-background-white: #ffffff;
+  --color-background-semiWhite: #f8f8fa;
+  --color-background-gray: #d2cfdb;
+  --color-text-black: #403f53;
+  --color-text-dark: #7f7e8a;
+  --color-text-gray: #bbbbc5;
+  --color-border-normal: #d2cfdb;
+  --color-border-light: #ececf1;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,9 +42,12 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: var(--letterspacing-ja);
+  line-height: var(--lineheigt-single);
   font-feature-settings: "palt" 1;
   color: #403f53;
+  background-color: var(--color-background-semiWhite);
   margin: 0;
   padding: 0;
 }
@@ -22,4 +62,24 @@ p {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.page-module__sD639q__htmlContent h2 {
+  font-size: var(--fontsize-jp-h3);
+  margin: 24px 0;
+}
+
+.page-module__sD639q__htmlContent h3 {
+  font-size: var(--fontsize-jp-h4);
+  margin: 16px 0;
+}
+
+.page-module__sD639q__htmlContent p {
+  line-height: var(--lineheigt-multi);
+}
+
+.page-module__sD639q__htmlContent img {
+  max-width: 800px;
+  height: auto;
+  margin: 16px 0;
 }

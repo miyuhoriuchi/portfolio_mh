@@ -1,40 +1,60 @@
 import WorkCard from "../WorkCard/index";
 import styles from "./index.module.css";
+import { getWorksList } from "@/app/_libs/microcms";
+import Link from "@/node_modules/next/link";
 
-const Works = () => {
+const Works = async () => {
+  const { contents: worksTop } = await getWorksList({
+    filters: "isDisplayTop[equals]true",
+    limit: 3,
+    orders: "-order",
+  });
+  const { contents: worksOther } = await getWorksList({
+    filters: "isDisplayTop[equals]false",
+    orders: "-order",
+  });
   return (
-    <div className={styles.worksGrid}>
-      <WorkCard
-        title="The Live Scheduler"
-        category="UXデザイン・UIデザイン"
-        description="「”好き”を逃さない」
-      観劇やライブ参加など、エンタメ鑑賞を趣味とする方向けのスケジュール管理アプリです。"
-        small={false}
-      />
-      <WorkCard
-        title="O Yasai"
-        category="UIデザイン（情報設計〜ビジュアルデザイン）"
-        description="青果卸の業務を想定したtoBの受注管理アプリです。"
-        small={false}
-      />
-      <WorkCard
-        title="Voice Flow"
-        category="UIデザイン（ビジュアルデザイン）"
-        description="既存のSNSに疲れてしまった人へ。
-      「ちょうど良い心地よさ」を提供する音声SNSアプリです。"
-        small={false}
-      />
-      <WorkCard
-        title="『補講男子』 補講シリーズ "
-        category="グラフィックデザイン"
-        small={true}
-      />
-      <WorkCard
-        title="東大女子のためのフリーペーパーbiscUiT"
-        category="グラフィックデザイン・DTP"
-        small={true}
-      />
-    </div>
+    <>
+      <div className={styles.worksTop}>
+        <p className={styles.subCategoryName}>UI/UXデザイン（自主制作）</p>
+        <div className={styles.worksGrid}>
+          <Link href={`/${worksTop[0].id}`}>
+            <WorkCard
+              title={worksTop[0].title}
+              category={worksTop[0].category}
+              description={worksTop[0].overviewShort}
+              eyecatch={worksTop[0].eyecatch}
+              small={false}
+            />
+          </Link>
+          <Link href={`/${worksTop[1].id}`}>
+            <WorkCard
+              title={worksTop[1].title}
+              category={worksTop[1].category}
+              description={worksTop[1].overviewShort}
+              eyecatch={worksTop[1].eyecatch}
+              small={false}
+            />
+          </Link>
+        </div>
+      </div>
+      <div>
+        <p className={styles.subCategoryName}>その他のデザイン</p>
+        <div className={styles.worksGrid}>
+          {worksOther.map((work) => (
+            <Link href={`/${work.id}`} key={work.id}>
+              <WorkCard
+                title={work.title}
+                category={work.category}
+                eyecatch={work.eyecatch}
+                small={true}
+                key={work.id}
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

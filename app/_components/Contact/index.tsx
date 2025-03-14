@@ -1,22 +1,34 @@
 import styles from "./index.module.css";
+import Image from "@/node_modules/next/image";
+import Link from "@/node_modules/next/link";
 
 const Contact = () => {
   return (
-    <>
-      <p className={styles.email}>miyuhoriuchi721@gmail.com</p>
+    <div className={styles.contactBlock}>
       <div className={styles.socialLinks}>
-        <a href="#" className={styles.socialLink}>
-          {/* <Image /> */}
-        </a>
-        <a href="#" className={styles.socialLink}>
-          in
-        </a>
-        <a href="#" className={styles.socialLink}>
-          Git
-        </a>
+        <Link
+          href="https://x.com/home"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <Image src="/icon_x.svg" alt="" width={32} height={32} />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/miyu-horiuchi-4a00a7170/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <Image src="/icon_in.svg" alt="" width={32} height={32} />
+        </Link>
+        <Link
+          href="https://github.com/miyuhoriuchi"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <Image src="/icon_git.svg" alt="" width={32} height={32} />
+        </Link>
       </div>
-      <p className={styles.copyright}>© Horiuchi Miyu 2025</p>
-    </>
+    </div>
   );
 };
 

@@ -1,28 +1,31 @@
 .header {
-  padding-top: 24px;
+  padding: 40px 0;
   text-align: center;
+  letter-spacing: var(--letterspacing-en);
 }
 
 .portfolioText {
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  color: #403f53;
-  margin-bottom: 12px;
+  font-size: var(--fontsize-en-h3);
+  color: var(--color-text-black);
+  margin-bottom: 16px;
 }
 
 .name {
-  font-size: 24px;
-  letter-spacing: 0.05em;
-  color: #403f53;
+  font-size: var(--fontsize-en-h2);
+  color: var(--color-text-black);
   margin-bottom: 24px;
+  font-weight: 500;
 }
 
 .nav {
   display: flex;
   justify-content: center;
   gap: 48px;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  color: #403f53;
-  margin-bottom: 64px;
+  font-size: var(--fontsize-en-h3);
+  color: var(--color-text-dark);
+}
+
+.nav :hover {
+  color: var(--color-text-gray);
+  cursor: pointer;
 }
