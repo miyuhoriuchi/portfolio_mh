@@ -13,10 +13,10 @@ export default async function Page({ params }: Props) {
   return (
     <div className={styles.container}>
       <Image
-        src={data.eyecatch.url}
+        src={data.hero.url}
         alt=""
-        width={data.eyecatch.width}
-        height={data.eyecatch.height}
+        width={data.hero.width}
+        height={data.hero.height}
         className={styles.image}
         priority
       />

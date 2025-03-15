@@ -6,7 +6,8 @@
 
 .image {
   width: 100vw;
-  height: 465px;
+  height: auto;
+  max-height: 465px;
   background-color: var(--color-background-gray);
   margin-bottom: 48px;
 }
@@ -56,6 +57,7 @@
   }
 
   .image {
-    height: 300px;
+    max-height: 300px;
+    transform: scale(1.3);
   }
 }

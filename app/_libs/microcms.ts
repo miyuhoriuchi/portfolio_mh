@@ -16,6 +16,7 @@ export type Work = {
   tool?: string;
   content: string;
   eyecatch: MicroCMSImage;
+  hero: MicroCMSImage;
   priority: string;
   order: number;
 };
