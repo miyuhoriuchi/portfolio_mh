@@ -16,7 +16,7 @@
 
   /* 字間 */
   --letterspacing-en: 0.0625rem;
-  --letterspacing-ja: 0.0625rem;
+  --letterspacing-ja: 0.08rem;
 
   /* 行の高さ */
   --lineheigt-single: 1.4rem;
