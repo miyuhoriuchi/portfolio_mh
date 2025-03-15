@@ -15,3 +15,13 @@
   line-height: var(--lineheigt-multi);
   margin-bottom: 16px;
 }
+
+@media (max-width: 840px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+
+  .profileDescription {
+    margin-bottom: 0px;
+  }
+}

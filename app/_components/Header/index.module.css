@@ -29,3 +29,13 @@
   color: var(--color-text-gray);
   cursor: pointer;
 }
+
+@media (max-width: 840px) {
+  .header {
+    padding: 40px 16px;
+  }
+
+  .nav {
+    gap: 32px;
+  }
+}

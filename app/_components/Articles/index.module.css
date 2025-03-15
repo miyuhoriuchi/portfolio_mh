@@ -25,3 +25,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 840px) {
+  .articleContainer {
+    align-items: center;
+  }
+
+  .articlesGrid {
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+}

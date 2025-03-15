@@ -21,7 +21,7 @@
 
 .title {
   font-size: var(--fontsize-jp-h2);
-  line-height: var(--lineheigt-multi);
+  line-height: 3rem;
   margin-bottom: 32px;
 }
 
@@ -48,4 +48,14 @@
 
 .htmlContent {
   padding: 32px 0;
+}
+
+@media (max-width: 840px) {
+  .container {
+    width: 100%;
+  }
+
+  .image {
+    height: 300px;
+  }
 }
