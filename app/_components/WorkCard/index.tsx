@@ -27,6 +27,7 @@ const WorkCard: React.FC<WorkCardProps> = ({
           width={eyecatch.width}
           height={eyecatch.height}
           className={styles.image}
+          priority
         />
         <div className={styles.content}>
           <div
@@ -49,6 +50,7 @@ const WorkCard: React.FC<WorkCardProps> = ({
           width={eyecatch.width}
           height={eyecatch.height}
           className={styles.image}
+          priority
         />
         <div className={styles.content}>
           <div className={styles.titleContainer}>
