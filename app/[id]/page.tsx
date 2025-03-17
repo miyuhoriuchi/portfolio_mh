@@ -9,7 +9,8 @@ type Props = {
 };
 
 export default async function Page({ params }: Props) {
-  const data = await getWorksDetail(params.id);
+  const resolvedParams = await params;
+  const data = await getWorksDetail(resolvedParams.id);
   return (
     <div className={styles.container}>
       <Image
