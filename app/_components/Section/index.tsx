@@ -1,6 +1,5 @@
 "use client";
 import type React from "react";
-import { Children } from "react";
 import { useEffect, useState } from "react";
 import { usePathname } from "@/node_modules/next/navigation";
 import styles from "./index.module.css";

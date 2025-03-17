@@ -2,7 +2,6 @@ import { createClient } from "@/node_modules/microcms-js-sdk/dist/microcms-js-sd
 import type {
   MicroCMSQueries,
   MicroCMSImage,
-  MicroCMSListContent,
 } from "@/node_modules/microcms-js-sdk/dist/microcms-js-sdk";
 
 export type Work = {
