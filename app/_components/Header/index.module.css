@@ -11,7 +11,7 @@
 }
 
 .name {
-  font-size: var(--fontsize-en-h2);
+  font-size: var(--fontsize-en-h1);
   color: var(--color-text-black);
   margin-bottom: 24px;
   font-weight: 500;

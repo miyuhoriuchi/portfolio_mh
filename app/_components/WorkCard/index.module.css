@@ -36,13 +36,14 @@
 .title {
   font-size: var(--fontsize-jp-h4);
   letter-spacing: var(--letterspacing-ja);
+  line-height: var(--lineheigt-multi);
   font-weight: 700;
-  margin-bottom: 8px;
 }
 
 .category {
   font-size: var(--fontsize-ja-sub);
   color: var(--color-text-dark);
+  margin-bottom: 8px;
 }
 
 .titleContainer {
@@ -76,6 +77,11 @@
   .content {
     width: calc(100% - 32px);
     background-color: rgb(255, 255, 255, 0.75);
+  }
+
+  .image {
+    width: 800px;
+    right: -10%;
   }
 
   .image:hover {

@@ -33,10 +33,10 @@ const WorkCard: React.FC<WorkCardProps> = ({
           <div
             className={`${styles.titleContainer} ${styles.smallTitleContainer}`}
           >
-            <h3 className={`${styles.title} ${styles.smallTitle}`}>{title}</h3>
             <p className={`${styles.category} ${styles.smallCategory}`}>
               {category}
             </p>
+            <h3 className={`${styles.title} ${styles.smallTitle}`}>{title}</h3>
           </div>
         </div>
       </div>
@@ -54,8 +54,8 @@ const WorkCard: React.FC<WorkCardProps> = ({
         />
         <div className={styles.content}>
           <div className={styles.titleContainer}>
-            <h3 className={styles.title}>{title}</h3>
             <p className={styles.category}>{category}</p>
+            <h3 className={styles.title}>{title}</h3>
           </div>
           {description && <p className={styles.description}>{description}</p>}
         </div>

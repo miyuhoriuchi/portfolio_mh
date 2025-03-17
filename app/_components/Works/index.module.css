@@ -10,6 +10,7 @@
 .subCategoryName {
   color: var(--color-text-dark);
   margin-bottom: 8px;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {

@@ -81,6 +81,7 @@ a {
 .page-module__sD639q__htmlContent p {
   line-height: var(--lineheigt-multi);
   margin-bottom: 16px;
+  overflow-wrap: anywhere;
 }
 
 .page-module__sD639q__htmlContent img {
@@ -98,6 +99,10 @@ a {
 .page-module__sD639q__htmlContent a:hover {
   color: var(--color-text-gray);
   border-bottom: 1px dashed var(--color-text-gray);
+}
+
+.page-module__sD639q__htmlContent hr {
+  border: 0.5px solid var(--color-border-normal);
 }
 
 @media (max-width: 840px) {
