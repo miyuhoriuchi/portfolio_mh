@@ -57,7 +57,6 @@ const WorkCard: React.FC<WorkCardProps> = ({
             <p className={styles.category}>{category}</p>
             <h3 className={styles.title}>{title}</h3>
           </div>
-          {description && <p className={styles.description}>{description}</p>}
         </div>
       </div>
     );
