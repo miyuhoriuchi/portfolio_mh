@@ -36,6 +36,15 @@ const Works = async () => {
               small={false}
             />
           </Link>
+          <Link href={`/${worksTop[2].id}`}>
+            <WorkCard
+              title={worksTop[2].title}
+              category={worksTop[2].category}
+              description={worksTop[2].overviewShort}
+              eyecatch={worksTop[2].eyecatch}
+              small={false}
+            />
+          </Link>
         </div>
       </div>
       <div>
