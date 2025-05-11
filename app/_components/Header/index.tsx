@@ -10,7 +10,11 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <p className={styles.portfolioText}>PORTFOLIO</p>
-      <h1 className={styles.name}>HORIUCHI MIYU</h1>
+
+      <Link href="/" className={styles.name}>
+        HORIUCHI MIYU
+      </Link>
+
       <nav className={styles.nav}>
         {pathname === "/" ? (
           <Scroll to="works" smooth={true} duration={600} offset={-30}>
