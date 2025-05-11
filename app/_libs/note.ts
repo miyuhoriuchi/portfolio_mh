@@ -17,7 +17,7 @@ export async function fetchNoteArticles(): Promise<NoteArticle[]> {
     const feed = await parser.parseURL("https://note.com/miyu_003d26/rss");
 
     const filteredArticles = feed.items
-      .filter((item) => !item.title?.includes("UIデザイン記録"))
+      .filter((item) => !item.title?.includes("デザイン記録"))
       .map((item) => ({
         title: item.title ?? "No Title",
         link: item.link ?? "#",
