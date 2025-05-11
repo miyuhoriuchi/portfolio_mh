@@ -28,28 +28,28 @@ export default async function Page({ params }: Props) {
             {data.scope && (
               <div className={styles.infoItem}>
                 <p className={styles.itemName}>担当範囲</p>
-                <p>{data.scope}</p>
+                <p className={styles.itemContent}>{data.scope}</p>
               </div>
             )}
 
             {data.period && (
               <div className={styles.infoItem}>
                 <p className={styles.itemName}>制作時期</p>
-                <p>{data.period}</p>
+                <p className={styles.itemContent}>{data.period}</p>
               </div>
             )}
 
             {data.duration && (
               <div className={styles.infoItem}>
                 <p className={styles.itemName}>制作期間</p>
-                <p>{data.duration}</p>
+                <p className={styles.itemContent}>{data.duration}</p>
               </div>
             )}
 
             {data.tool && (
               <div className={styles.infoItem}>
                 <p className={styles.itemName}>使用ツール</p>
-                <p>{data.tool}</p>
+                <p className={styles.itemContent}>{data.tool}</p>
               </div>
             )}
           </div>

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--color-background-gray);
-  border-radius: 16px;
+  border-radius: 8px;
   overflow: hidden;
   height: 320px;
   position: relative;
@@ -30,7 +30,7 @@
   justify-content: center;
   background-color: rgb(255, 255, 255, 0.9);
   margin: 16px;
-  border-radius: 12px;
+  border-radius: 6px;
   position: absolute;
   height: calc(100% - 32px);
   width: 40%;
