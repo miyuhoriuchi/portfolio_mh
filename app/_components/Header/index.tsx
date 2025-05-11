@@ -27,6 +27,14 @@ const Header = () => {
         ) : (
           <Link href="/#articles">ARTICLES</Link>
         )}
+
+        {pathname === "/" ? (
+          <Scroll to="about" smooth={true} duration={600} offset={-30}>
+            ABOUT
+          </Scroll>
+        ) : (
+          <Link href="/#about">ABOUT</Link>
+        )}
       </nav>
     </header>
   );

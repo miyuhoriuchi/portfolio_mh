@@ -2,10 +2,27 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  flex-direction: column;
+}
+
+.profileImage {
+  border-radius: 100;
+}
+
+.profileText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .profileName {
   font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.profileTitle {
+  font-size: var(--fontsize-jp-sub);
+  color: var(--color-text-dark);
   margin-bottom: 16px;
 }
 
@@ -14,6 +31,11 @@
   color: var(--color-text-black);
   line-height: var(--lineheigt-multi);
   margin-bottom: 16px;
+}
+
+.link {
+  color: var(--color-text-dark);
+  border-bottom: 1px dashed var(--color-text-dark);
 }
 
 @media (max-width: 840px) {
