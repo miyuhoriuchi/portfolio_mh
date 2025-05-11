@@ -7,14 +7,14 @@ import About from "./_components/About/index";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Section title="" subTitle="" id="about">
-        <About />
-      </Section>
       <Section title="WORKS" subTitle="制作物" id="works">
         <Works />
       </Section>
       <Section title="ARTICLES" subTitle="ブログ記事" id="articles">
         <Articles />
+      </Section>
+      <Section title="" subTitle="" id="about">
+        <About />
       </Section>
     </main>
   );
