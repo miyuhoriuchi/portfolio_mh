@@ -1,0 +1,29 @@
+.scrollToTopButton {
+  position: fixed;
+  bottom: 80px;
+  right: 200px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--color-text-gray);
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--color-text-dark);
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scrollToTopButton:hover {
+  background-color: var(--color-background-gray);
+  transform: translateY(-3px);
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.scrollToTopButton:active {
+  transform: translateY(0);
+}
