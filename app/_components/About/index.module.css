@@ -38,6 +38,11 @@
   border-bottom: 1px dashed var(--color-text-dark);
 }
 
+.link:hover {
+  color: var(--color-text-gray);
+  border-bottom: 1px dashed var(--color-text-gray);
+}
+
 @media (max-width: 840px) {
   .aboutContent {
     flex-direction: column;
