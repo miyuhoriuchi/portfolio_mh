@@ -22,7 +22,6 @@ const Works = async () => {
             <WorkCard
               title={worksTop[0].title}
               category={worksTop[0].category}
-              description={worksTop[0].overviewShort}
               eyecatch={worksTop[0].eyecatch}
               hero={worksTop[0].hero}
               small={false}
@@ -32,7 +31,6 @@ const Works = async () => {
             <WorkCard
               title={worksTop[1].title}
               category={worksTop[1].category}
-              description={worksTop[1].overviewShort}
               eyecatch={worksTop[1].eyecatch}
               hero={worksTop[1].hero}
               small={false}
@@ -42,7 +40,6 @@ const Works = async () => {
             <WorkCard
               title={worksTop[2].title}
               category={worksTop[2].category}
-              description={worksTop[2].overviewShort}
               eyecatch={worksTop[2].eyecatch}
               hero={worksTop[2].hero}
               small={false}

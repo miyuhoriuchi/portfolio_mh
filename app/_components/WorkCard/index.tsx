@@ -15,7 +15,6 @@ interface WorkCardProps {
 const WorkCard: React.FC<WorkCardProps> = ({
   title,
   category,
-  description,
   eyecatch,
   hero,
   small,
