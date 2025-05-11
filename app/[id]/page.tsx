@@ -1,7 +1,6 @@
 import { getWorksDetail } from "../_libs/microcms";
-import ScrollToTopButton from "../_components/ScrollToTopButton/index";
+import ClientOnlyScrollToTop from "../_components/ClientOnlyScrollToTopButton/index";
 import Image from "@/node_modules/next/image";
-import { Suspense } from "react";
 import styles from "./page.module.css";
 
 type Props = {
@@ -62,9 +61,9 @@ export default async function Page({ params }: Props) {
           }}
         />
       </div>
-      <Suspense fallback={null}>
-        <ScrollToTopButton />
-      </Suspense>
+      <span suppressHydrationWarning>
+        <ClientOnlyScrollToTop />
+      </span>
     </div>
   );
 }

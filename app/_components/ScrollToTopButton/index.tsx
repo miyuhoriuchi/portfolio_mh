@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 export default function ScrollToTopButton() {
   const [showButton, setShowButton] = useState(false);
 
-  // スクロール位置に基づいてボタンの表示/非表示を切り替える
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -15,6 +14,9 @@ export default function ScrollToTopButton() {
         setShowButton(false);
       }
     };
+
+    // 初期スクロール位置をチェック
+    handleScroll();
 
     // スクロールイベントのリスナーを追加
     window.addEventListener("scroll", handleScroll);
@@ -33,7 +35,7 @@ export default function ScrollToTopButton() {
     });
   };
 
-  // ボタンが表示状態の時だけレンダリング
+  // ボタンが表示状態でない場合は何も表示しない
   if (!showButton) return null;
 
   return (
