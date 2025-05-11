@@ -24,6 +24,7 @@ const Works = async () => {
               category={worksTop[0].category}
               description={worksTop[0].overviewShort}
               eyecatch={worksTop[0].eyecatch}
+              hero={worksTop[0].hero}
               small={false}
             />
           </Link>
@@ -33,6 +34,7 @@ const Works = async () => {
               category={worksTop[1].category}
               description={worksTop[1].overviewShort}
               eyecatch={worksTop[1].eyecatch}
+              hero={worksTop[1].hero}
               small={false}
             />
           </Link>
@@ -42,6 +44,7 @@ const Works = async () => {
               category={worksTop[2].category}
               description={worksTop[2].overviewShort}
               eyecatch={worksTop[2].eyecatch}
+              hero={worksTop[2].hero}
               small={false}
             />
           </Link>
@@ -56,6 +59,7 @@ const Works = async () => {
                 title={work.title}
                 category={work.category}
                 eyecatch={work.eyecatch}
+                hero={work.hero}
                 small={true}
                 key={work.id}
               />
