@@ -18,7 +18,6 @@ const About = () => {
           <p className={styles.profileTitle}>Aspiring UI/UX Designer</p>
           <p className={styles.profileDescription}>
             新卒で入社した総合コンサルティング会社にてシステムエンジニアとして従事しながら、副業でWEB開発や情報デザインを経験。
-            <br />
             「よりユーザーに近い場所でものづくりをしたい」という想いで退職し、オンラインコミュニティ
             <Link
               href="https://www.bo-no.design/"
