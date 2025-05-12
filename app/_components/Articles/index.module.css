@@ -6,7 +6,7 @@
 
 .articlesGrid {
   display: grid;
-  gap: 32px;
+  gap: 24px;
   margin-bottom: 16px;
 }
 
