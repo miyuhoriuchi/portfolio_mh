@@ -2,7 +2,6 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: 32px;
 }
 
 @media (max-width: 840px) {

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 0 0 64px;
+  padding: 16px;
+  border-bottom: dashed 1px var(--color-border-normal);
+}
+
+.profpic {
+  border-radius: 100%;
+}
